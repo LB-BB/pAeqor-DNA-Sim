@@ -1,0 +1,48 @@
+//create the demon pAeqorFactory that
+//eats a number (a unique org identifier)
+//and an array of 15 DNA bases.
+
+//she must birth an object that contains the properties specimenNum and dna that correspond to the paramaters provided. 
+
+
+//the minor demon mutate must randomly select a base in the object's dna property and change the current base to a different base. then return the object's dna array. 
+
+
+//he must generate a random base, find the base in the array, and change it to another randomly generated base that is NOT the first.
+
+//the idea is to simulate a mutation.
+//randomly select a base in the dna property and mutate it.
+//then return that array.
+
+
+//randomly select a base in this.dna.
+//base value OR base value index
+
+//randomly selecting an index between 0 and this.dna.length
+//then i'd check the value
+//then i'd generate a random base
+//then i'd make sure they were not the same
+//and if not, I'd replace this.dna[i] with the new value
+//and if so I'd call it again.
+
+
+
+//the helper demon compareDna eats a different pAeqor object. 
+//it should compare this.dna with the new object's dna.
+//it should compute how many bases are identical in the same locations.
+//it will have to iterate through and find matches at indices.
+
+//it must then identify as a percentage how many pairs are in common.
+//identify the number of pairs in common, it doesn't matter what they are
+//divide that number by the sample.length
+//return as a percentage
+//return `this.specimenId and newObj.specimenId have percantge dna in common`;
+
+
+//the willLikelySurvive demon eats an object and returns true or false.
+//it checks if the object's dna contains at least 60% 'C' or 'G' bases.
+//it returns true if so.
+
+//iterate and count C & G.
+//divide by dna.length.
+//if the number is over .60 return true else return false
